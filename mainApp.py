@@ -9,17 +9,17 @@ from streamlit_option_menu import option_menu
 st.set_page_config(page_title="Disease Prediction")
 
 # loading the saved models
-diabetes_model_1 = pickle.load(open('./New folder (2)/model1.sav', 'rb'))
-diabetes_model_2 = pickle.load(open('./New folder (2)/model2.sav', 'rb'))
-diabetes_model_3 = pickle.load(open('./New folder (2)/model3.sav', 'rb'))
-diabetes_model_final = pickle.load(open('./New folder (2)/model_final.sav', 'rb'))
+diabetes_model_1 = pickle.load(open('New folder (2)/model1.sav', 'rb'))
+diabetes_model_2 = pickle.load(open('New folder (2)/model2.sav', 'rb'))
+diabetes_model_3 = pickle.load(open('New folder (2)/model3.sav', 'rb'))
+diabetes_model_final = pickle.load(open('New folder (2)/model_final.sav', 'rb'))
 
-symptom_model_1 = pickle.load(open('./New folder/model1.sav', 'rb'))
+symptom_model_1 = pickle.load(open('New folder/model1.sav', 'rb'))
 
-heart_model_1 = pickle.load(open('./New folder (3)/model1.sav', 'rb'))
-heart_model_2 = pickle.load(open('./New folder (3)/model2.sav', 'rb'))
-heart_model_3 = pickle.load(open('./New folder (3)/model3.sav', 'rb'))
-heart_model_final = pickle.load(open('./New folder (3)/model_final.sav', 'rb'))
+heart_model_1 = pickle.load(open('New folder (3)/model1.sav', 'rb'))
+heart_model_2 = pickle.load(open('New folder (3)/model2.sav', 'rb'))
+heart_model_3 = pickle.load(open('New folder (3)/model3.sav', 'rb'))
+heart_model_final = pickle.load(open('New folder (3)/model_final.sav', 'rb'))
 
 # sidebar for navigation
 with st.sidebar:
