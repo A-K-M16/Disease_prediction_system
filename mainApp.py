@@ -2,7 +2,10 @@ import pickle
 import sys
 import numpy as np
 import streamlit as st
+import subprocess
 
+# for simple commands
+subprocess.run(["ls", "-l"])
 sys.path.insert(1, "./")
 
 from streamlit_option_menu import option_menu
