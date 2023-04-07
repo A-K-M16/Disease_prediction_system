@@ -6,7 +6,7 @@ import subprocess
 
 # for simple commands
 subprocess.run(["ls"])
-subprocess.Popen("ls", cwd="/")
+subprocess.Popen("ls", cwd="/home/appuser/venv")
 
 
 from streamlit_option_menu import option_menu
