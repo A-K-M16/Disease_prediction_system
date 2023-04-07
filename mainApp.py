@@ -6,15 +6,8 @@ import subprocess
 
 # for simple commands
 subprocess.run(["ls"])
-subprocess.run(["cd .."])
-subprocess.run(["ls"])
-subprocess.run(["cd .."])
-subprocess.run(["ls"])
-subprocess.run(["cd .."])
-subprocess.run(["ls"])
-subprocess.run(["cd .."])
-subprocess.run(["ls"])
-subprocess.run(["cd .."])
+subprocess.Popen("ls", cwd="/")
+
 
 from streamlit_option_menu import option_menu
 st.set_page_config(page_title="Disease Prediction")
