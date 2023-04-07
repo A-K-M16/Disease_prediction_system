@@ -1,6 +1,13 @@
 import pickle
+import sys
 import numpy as np
 import streamlit as st
+import os
+cmd = 'ls'
+os.system(cmd)
+
+sys.path.insert(1, "/home/appuser/miniconda3/envs/env1/lib/python3.11/site-packagesstreamlit_option_menu")
+
 from streamlit_option_menu import option_menu
 st.set_page_config(page_title="Disease Prediction")
 
