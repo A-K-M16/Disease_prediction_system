@@ -5,8 +5,16 @@ import streamlit as st
 import subprocess
 
 # for simple commands
-subprocess.run(["ls", "-l"])
-sys.path.insert(1, "./")
+subprocess.run(["ls"])
+subprocess.run(["cd .."])
+subprocess.run(["ls"])
+subprocess.run(["cd .."])
+subprocess.run(["ls"])
+subprocess.run(["cd .."])
+subprocess.run(["ls"])
+subprocess.run(["cd .."])
+subprocess.run(["ls"])
+subprocess.run(["cd .."])
 
 from streamlit_option_menu import option_menu
 st.set_page_config(page_title="Disease Prediction")
