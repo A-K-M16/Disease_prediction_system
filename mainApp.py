@@ -3,7 +3,7 @@ import sys
 import numpy as np
 import streamlit as st
 
-sys.path.insert(1, "./streamlit_option_menu")
+sys.path.insert(1, "./")
 
 from streamlit_option_menu import option_menu
 st.set_page_config(page_title="Disease Prediction")
