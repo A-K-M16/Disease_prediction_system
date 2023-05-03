@@ -1,16 +1,18 @@
-import pickle
 import sys
+import pickle
 import numpy as np
 import streamlit as st
-import subprocess
-
-# for simple commands
-subprocess.run(["ls"])
-subprocess.Popen("ls", cwd="/home/appuser/venv")
-
 
 from streamlit_option_menu import option_menu
+
 st.set_page_config(page_title="Disease Prediction")
+hide_menu_style = """
+        <style>
+        #MainMenu {visibility: hidden;}
+        </style>
+        """
+st.markdown(hide_menu_style, unsafe_allow_html=True)
+
 
 # loading the saved models
 diabetes_model_1 = pickle.load(open('./Module_2/model1.sav', 'rb'))
@@ -24,6 +26,7 @@ heart_model_1 = pickle.load(open('./Module_3/model1.sav', 'rb'))
 heart_model_2 = pickle.load(open('./Module_3//model2.sav', 'rb'))
 heart_model_3 = pickle.load(open('./Module_3/model3.sav', 'rb'))
 heart_model_final = pickle.load(open('./Module_3/model_final.sav', 'rb'))
+
 
 # sidebar for navigation
 with st.sidebar:
